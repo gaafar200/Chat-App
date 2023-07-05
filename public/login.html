@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ed08ecdb61.js" crossorigin="anonymous"></script>
+    <title>LOGIN | SIGNUP</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-fields">
+            <h1 id="title">Sign In</h1>
+            <div class="single-form">
+                <div class="input-field hidden" id="name-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="name" name="name">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="error-message">
+                    <small>Error Message</small>
+                </div>
+            </div>
+            <div class="single-form">
+                <div class="input-field">
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    <input type="text" id="username" placeholder="Username" name="username">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="error-message">
+                    <small>Error Message</small>
+                </div>
+            </div>
+            <div class="single-form">
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="password" name="password">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="error-message">
+                    <small>Error Message</small>
+                </div>
+            </div>
+            <div class="single-form">
+                <div class="input-field hidden" id="confirmed_password_field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confirmed_password" placeholder="Confirm password"  name="confirmed_password">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="error-message">
+                    <small>Error Message</small>
+                </div>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signinbtn">Sign in</button>
+                <button type="button" id="signupbtn" class="disable">Sign up</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    font-family : 'Poppines, sans-serif';
+    box-sizing : 'border-box';
+}
+.container{
+    width: 100%;
+    height : 100vh;
+    background-image: linear-gradient(to bottom, rgba(78, 124, 88, 0.5), rgba(149, 224, 126, 0.5)), url('../img/background.jpg');
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.form-fields{
+    width : 50%;
+    max-width: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    display: block;
+    transition: display 0.5s;
+}
+
+.form-fields h1{
+    font-size : 30px;
+    color : #3c00a0;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form-fields h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 10px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border : 0px;
+    outline : 0px;
+    padding: 15px 15px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow : hidden;
+}
+
+.input-field i{
+    padding-left: 15px;
+    color: #999;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background-color: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-size: 20px;
+}
+
+.disable{
+    background: #eaeaea !important;
+    color: #555 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+.error-message{
+    text-align: left;
+    padding-left: 5px;
+    color: #e74c3c;
+    display: none;
+    transition: display 0.5s;
+    position: relative;
+}
+.error-message i{
+    position: absolute;
+    top : -43px;
+    right : 10px;
+}
+
+.error-message small{
+    margin: 0px;
+}
+.error-message.error {
+    display: block !important;
+    border-color: #e74c3c !important;
+}
+
+.error-message.error .fa-circle-check{
+    display: none !important;
+}
+
+.error-message.success{
+    display: block !important;
+    color : #2ecc71 !important;
+}
+
+.error-message.success .fa-circle-exclamation {
+    display: none !important;
+}
+
+.input-field i.fa-circle-check{
+    position: absolute !important;
+    right: 70px;
+    display: none;
+}
+
+.input-field i.fa-circle-exclamation{
+    position: absolute;
+    right: 70px;
+    display: none;
+}
+
+.single-form.error i.fa-circle-exclamation{
+    display: block !important;
+    color: #e74c3c !important;
+}
+
+.single-form.error .input-field{
+    
+    border:2px solid rgba(231, 76, 60, 0.8)  !important;
+}
+
+
+.single-form.success .input-field {
+    border: 2px solid rgba(46, 204, 113, 0.5) !important;
+}
+
+.single-form.success i.fa-circle-check {
+    display: block !important;
+    color: #2ecc71 !important;
+}
+
+.single-form.error .error-message{
+    display: block !important;
+    color: #e74c3c !important;
+    margin-bottom: 2px !important;
+}
+
+
+/** Bouns Style **/
+
+.chats .chat{
+    transition: transform 2s ease;
+}
